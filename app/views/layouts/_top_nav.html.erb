@@ -19,6 +19,11 @@
         </li>
         
       </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <%= link_to cart_path do %>
+          <%= fa_icon "shopping-cart" %> My Cart (<%= cart.size %>)
+        <% end %>
+      </ul>
     </div>
   </div>
 </nav>
