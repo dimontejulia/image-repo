@@ -1,0 +1,15 @@
+// Vendor
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+// App
+
+// Global
+body {
+  padding-top: 70px;
+}
+
+// Bootstrap adjustments
+form.button_to {
+  display: inline;
+}
