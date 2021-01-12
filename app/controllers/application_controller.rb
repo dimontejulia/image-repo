@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   helper_method :cart
 
   def enhanced_cart
-    @enhanced_cart ||= image.where(id: cart.keys).map {|image| { image:image, quantity: cart[image.id.to_s] } }
+    @enhanced_cart ||= Image.where(id: cart.keys).map {|image| { image:image, quantity: cart[image.id.to_s] } }
   end
   helper_method :enhanced_cart
 

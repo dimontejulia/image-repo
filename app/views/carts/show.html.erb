@@ -1,0 +1,51 @@
+<section class="cart-show">
+
+  <header class="page-header">
+    <h1>My Cart</h1>
+  </header>
+
+  <% if enhanced_cart.length == 0 %>
+  <div class="alert alert-info" role="alert">
+  Your cart is empty. Shop our images to add to your cart.
+  </div>  
+
+  <% else %>
+  <div class="panel panel-default items">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th colspan="2">Image</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Image Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% enhanced_cart.each do |item| %>
+          <%= render 'item', image: item[:image], quantity: item[:quantity].to_i %>
+        <% end %>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="4">
+            TOTAL:
+          </th>
+          <th>$
+            <%=  cart_subtotal_cents %>
+          </th>
+        </tr>
+      </tfoot>
+    </table>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12">
+      <button class='btn btn-outline-primary btn-lg'>
+        <%= link_to 'Checkout', '/new' %>
+      </button>
+    </div>
+  </div>
+
+  <%end%>
+
+</section>
