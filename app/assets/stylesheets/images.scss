@@ -1,3 +1,59 @@
-// Place all the styles related to the images controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+main section.images-index,
+main section.categories-show {
+  .images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .image {
+      // flex:      1;
+      max-width: 260px;
+      // so that footer within can be positioned absolutely
+      position: relative;
+
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 15px;
+      padding-bottom: 80px;
+      margin-top: 20px;
+      // margin:        10px;
+
+      header img {
+        max-width: 100%;
+        max-height: 140px;
+        margin: auto;
+        display: block;
+      }
+
+      footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: #eee;
+        padding: 15px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        width: 100%;
+        opacity: 0.3;
+        transition: all 0.3s;
+      }
+
+      &:hover {
+        border-color: #999;
+
+        footer {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+main section.images-show {
+  .image-detail {
+    img.main-img {
+      max-width: 100%;
+    }
+  }
+}

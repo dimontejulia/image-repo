@@ -8,7 +8,7 @@ class ImagesController < ApplicationController
   end
 
   def create
-    @image = Image.new(product_params)
+    @image = Image.new(image_params)
     if @image.save
       redirect_to [:images], notice: 'Image created!'
     else
@@ -18,7 +18,7 @@ class ImagesController < ApplicationController
 
   private
 
-  def product_params
+  def image_params
     params.require(:image).permit(
       :name,
       :description, 
