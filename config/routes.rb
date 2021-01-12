@@ -4,6 +4,11 @@ Rails.application.routes.draw do
 
   get '/new' => 'images#new'
 
+  resource :cart, only: [:show] do
+    post   :add_item
+    post   :remove_item
+  end
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
