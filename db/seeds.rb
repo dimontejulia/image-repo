@@ -7,15 +7,48 @@ def open_asset(file_name)
   File.open(Rails.root.join('db', 'seed_assets', file_name))
 end
 
-Image.create(
+
+Image.create!(
   name: 'Toronto, Canada', 
   description: 'Toronto skyline at night featuring the CN Tower', 
-  img_url: open_asset('toronto.jpg'), 
+  image: open_asset('toronto.jpg'), 
   price_cents: 40.00
 )
-Image.create(
+Image.create!(
   name: 'Paris, France',
   description: 'The iconic Eiffel tower in Paris, France', 
-  img_url: open_asset('paris.jpeg'),
+  image: open_asset('paris.jpeg'),
   price_cents: 67.00
 )
+Image.create!(
+  name: 'Waffles',
+  description: 'Pumpkin waffles with whipped cream.', 
+  image: open_asset('waffles.jpg'),
+  price_cents: 18.00
+)
+Image.create!(
+  name: 'Chocolate Chip Cookies',
+  description: 'Brown butter chocolate chip cookies with flaked sea salt', 
+  image: open_asset('cookie.jpg'),
+  price_cents: 23.00
+)
+Image.create!(
+  name: 'Charcuterie board',
+  description: 'Charcuterie with fresh baked focaccia 3 ways.', 
+  image: open_asset('charcuterie.jpg'),
+  price_cents: 50.00
+)
+Image.create!(
+  name: 'Burger',
+  description: 'Juicy burger with french fries', 
+  image: open_asset('burger.jpg'),
+  price_cents: 29.00
+)
+Image.create!(
+  name: 'Bread',
+  description: 'Fresh baked sourdough loaf.', 
+  image: open_asset('bread1.jpg'),
+  price_cents: 31.00
+)
+
+puts "DONE!"

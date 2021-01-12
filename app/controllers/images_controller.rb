@@ -22,7 +22,7 @@ class ImagesController < ApplicationController
     params.require(:image).permit(
       :name,
       :description, 
-      :img_url
+      :image
     )
   end
 end
