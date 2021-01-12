@@ -10,10 +10,10 @@ end
 Image.create(
   name: 'Toronto, Canada', 
   description: 'Toronto skyline at night featuring the CN Tower', 
-  img_url: open_asset('paris.jpeg')
+  img_url: open_asset('toronto.jpg')
 )
 Image.create(
-  name: 'Paris, France', 
+  name: 'Paris, France',
   description: 'The iconic Eiffel tower in Paris, France', 
   img_url: open_asset('paris.jpeg')
 )
