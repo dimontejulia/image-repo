@@ -39,6 +39,12 @@
         </div>
 
         <div class="form-group">
+          <%= form.label :keywords %>
+          <p>Enter in a list of keywords to help users search for this item.</p>
+          <%= form.text_area :keywords, class: 'form-control' %>
+        </div>
+
+        <div class="form-group">
           <%= form.label :image %>
           <%= form.file_field :image %>
         </div>

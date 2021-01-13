@@ -12,7 +12,7 @@ class ImagesController < ApplicationController
       redirect_to(root_path, alert: "Empty field!") and return  
     else  
       @parameter = (params[:search].downcase << '%').prepend('%')
-      @results = Image.where("lower(description) LIKE :search OR lower(name) LIKE :search", search: @parameter)
+      @results = Image.where("lower(description) LIKE :search OR lower(name) LIKE :search OR lower(keywords) LIKE :search", search: @parameter)
     end
   end
 
