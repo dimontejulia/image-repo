@@ -1,0 +1,21 @@
+<tr>
+  <td>
+    <%= image_tag image.image.tiny %>
+  </td>
+  <td>
+    <h4><%= image.name %></h4>
+  </td>
+  <td>
+    <%= image.description %>
+  </td>
+  <td>
+  <%= image.keywords %>
+</td>
+  <td>$
+    <%=   image.price_cents %>
+  </td>
+
+  <td>
+    <%= link_to fa_icon('trash'), [:admin, image], class: 'btn btn-sm btn-danger', method: :delete, data: { confirm: "Are you sure?" } %>
+  </td>
+</tr>
