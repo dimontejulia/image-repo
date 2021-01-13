@@ -7,6 +7,17 @@ class ImagesController < ApplicationController
     @image = Image.new
   end
 
+  def search
+    if params[:search].blank?  
+      redirect_to(root_path, alert: "Empty field!") and return  
+    else  
+      @parameter = (params[:search].downcase << '%').prepend('%')
+      @results = Image.where("lower(description) LIKE :search OR lower(name) LIKE :search", search: @parameter)
+    end
+  end
+
+  
+
   def create
     @image = Image.new(image_params)
     if @image.save

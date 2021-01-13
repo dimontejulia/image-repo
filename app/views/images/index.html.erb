@@ -4,6 +4,13 @@
       <h1>Image Repository</h1>
   </header>
 
+  <% if alert %>
+  <div class="alert alert-warning" role="alert">
+  <%= alert %>
+  </div>
+  <%end%>
+  
+
   <div class="images">
     <%= render @images %>
   </div>
