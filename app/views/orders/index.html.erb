@@ -1,7 +1,18 @@
 <section class="order-confirmation">
 
   <header class="page-header">
-    <h1>Order Confirmation</h1>
+    <h1>Your order was placed successully.</h1>
   </header>
+
+  <div class="order-summary jumbotron">
+    <h2>Thank you for your order! We hope you enjoyed browsing our images. </h2>
+    <br>
+    <h4>Return to the home page to continue shopping: </h4>
+    <%= link_to 'All images', [:images], class: 'btn btn-info' %>
+  </div>  
+
+  <div class="images">
+  </div>
+
 
 </section>
