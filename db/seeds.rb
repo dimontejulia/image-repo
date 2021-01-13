@@ -8,23 +8,40 @@ def open_asset(file_name)
 end
 
 Image.create!(
-  name: 'Toronto, Canada', 
-  description: 'Toronto skyline at night featuring the CN Tower', 
-  image: open_asset('toronto.jpg'), 
-  price_cents: 40.00
+  name: 'Pie', 
+  description: 'Strawberry rhubarb pie with homemade crust.', 
+  image: open_asset('pie.jpg'), 
+  price_cents: 55.00
 )
 Image.create!(
-  name: 'Paris, France',
-  description: 'The iconic Eiffel tower in Paris, France', 
-  image: open_asset('paris.jpeg'),
-  price_cents: 67.00
+  name: 'Focaccia', 
+  description: 'Traditional Italian focaccia.', 
+  image: open_asset('focaccia.jpg'), 
+  price_cents: 30.00
 )
-
+Image.create!(
+  name: 'Muffins',
+  description: 'Pumpkin muffins. Perfect for fall.', 
+  image: open_asset('muffin.jpg'),
+  price_cents: 11.00
+)
+Image.create!(
+  name: 'Pizza',
+  description: 'Homemade pizza dough cooked in a stone oven topped with spicy salami.', 
+  image: open_asset('pizza.jpg'),
+  price_cents: 23.00
+)
 Image.create!(
   name: 'Waffles',
   description: 'Pumpkin waffles with whipped cream.', 
   image: open_asset('waffles.jpg'),
   price_cents: 18.00
+)
+Image.create!(
+  name: 'Burger',
+  description: 'Juicy burger with french fries', 
+  image: open_asset('burger.jpg'),
+  price_cents: 29.00
 )
 Image.create!(
   name: 'Chocolate Chip Cookies',
@@ -39,22 +56,10 @@ Image.create!(
   price_cents: 50.00
 )
 Image.create!(
-  name: 'Burger',
-  description: 'Juicy burger with french fries', 
-  image: open_asset('burger.jpg'),
-  price_cents: 29.00
-)
-Image.create!(
   name: 'Bread',
   description: 'Fresh baked sourdough loaf.', 
   image: open_asset('bread1.jpg'),
   price_cents: 31.00
-)
-Image.create!(
-  name: 'Poke',
-  description: 'Colourful poke bowl.', 
-  image: open_asset('poke.jpg'),
-  price_cents: 41.00
 )
 
 

@@ -22,6 +22,7 @@ class ImagesController < ApplicationController
     params.require(:image).permit(
       :name,
       :description, 
+      :price_cents,
       :image
     )
   end
