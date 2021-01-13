@@ -7,7 +7,6 @@ def open_asset(file_name)
   File.open(Rails.root.join('db', 'seed_assets', file_name))
 end
 
-
 Image.create!(
   name: 'Toronto, Canada', 
   description: 'Toronto skyline at night featuring the CN Tower', 
@@ -20,6 +19,7 @@ Image.create!(
   image: open_asset('paris.jpeg'),
   price_cents: 67.00
 )
+
 Image.create!(
   name: 'Waffles',
   description: 'Pumpkin waffles with whipped cream.', 
@@ -50,5 +50,12 @@ Image.create!(
   image: open_asset('bread1.jpg'),
   price_cents: 31.00
 )
+Image.create!(
+  name: 'Poke',
+  description: 'Colourful poke bowl.', 
+  image: open_asset('poke.jpg'),
+  price_cents: 41.00
+)
+
 
 puts "DONE!"
