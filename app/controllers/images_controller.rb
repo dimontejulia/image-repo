@@ -32,7 +32,8 @@ class ImagesController < ApplicationController
       :name,
       :description, 
       :price_cents,
-      :image
+      :image, 
+      :keywords
     )
   end
 end
