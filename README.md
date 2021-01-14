@@ -34,5 +34,6 @@ Admin users are the only users that can delete images from the repository.
 ## Dependencies
 
 - Rails 4.2
+- Ruby 2.5.7
 - PostgreSQL 9.x
 - CarrierWave for image upload

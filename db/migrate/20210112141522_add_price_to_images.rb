@@ -1,4 +1,4 @@
-class Addprice_centsToImages < ActiveRecord::Migration
+class AddPriceToImages < ActiveRecord::Migration
   def change
     add_column :images, :price_cents, :integer
   end
