@@ -3,10 +3,11 @@
 Image repository e-commerce application. Users can browse, create new images, and buy products.
 
 Once logged in, admin users have the ability to delete images.
+(Shh... the username is 'Admin' and the password is 'password123' but don't tell anyone!)
 
 Fun fact, all the images in this repository are photos of food that I have cooked or baked!
 In addition to developing, I have a passion for all things FOOD.
-Check out some of my other edible creations ["@juliaeatzworld"](https://www.instagram.com/juliaeatzworld/).
+Check out some of my other edible creations [@juliaeatzworld](https://www.instagram.com/juliaeatzworld/).
 
 ## Screenshots
 
