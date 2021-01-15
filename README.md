@@ -11,7 +11,7 @@ Check out some of my other edible creations [@juliaeatzworld](https://www.instag
 
 ## Video Walkthrough
 
-[!["video walkthrough"](https://youtu.be/u3zP76PTxTI)](https://youtu.be/u3zP76PTxTI)
+[!["video walkthrough"](https://img.youtube.com/vi/u3zP76PTxTI/0.jpg)](https://youtu.be/u3zP76PTxTI)
 
 ## Screenshots
 
