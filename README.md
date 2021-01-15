@@ -9,6 +9,10 @@ Fun fact, all the images in this repository are photos of food that I have cooke
 In addition to developing, I have a passion for all things FOOD.
 Check out some of my other edible creations [@juliaeatzworld](https://www.instagram.com/juliaeatzworld/).
 
+## Video Walkthrough
+
+[!["video walkthrough"](https://youtu.be/u3zP76PTxTI)](https://youtu.be/u3zP76PTxTI)
+
 ## Screenshots
 
 Home page - Image Repository. Users can browse images and add them to their cart by clicking 'add'.
